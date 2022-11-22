@@ -13,7 +13,7 @@ namespace AcademicHandle.Usercontrol
     public partial class BlankCalendar : UserControl
     {
         public int Day { get; set; }
-        public int Status { get; set; }
+        public string Status { get; set; }
         public bool IsToday { get; set; }
         public BlankCalendar()
         {
@@ -34,6 +34,17 @@ namespace AcademicHandle.Usercontrol
         private void BlankCalendar_MouseLeave(object sender, EventArgs e)
         {
             this.BackColor = Color.White;
+        }
+
+        private void BlankCalendar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BlankCalendar_Click(object sender, EventArgs e)
+        {
+            frm_SetTask frm = new frm_SetTask();
+            frm.Show();
         }
     }
 }

@@ -59,6 +59,8 @@
             this.Controls.Add(this.lb_Date);
             this.Name = "BlankCalendar";
             this.Size = new System.Drawing.Size(122, 106);
+            this.Load += new System.EventHandler(this.BlankCalendar_Load);
+            this.Click += new System.EventHandler(this.BlankCalendar_Click);
             this.MouseLeave += new System.EventHandler(this.BlankCalendar_MouseLeave);
             this.MouseHover += new System.EventHandler(this.BlankCalendar_MouseHover);
             this.ResumeLayout(false);

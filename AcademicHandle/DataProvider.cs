@@ -32,7 +32,7 @@ namespace Calender
         {
             try
             {
-                string strCnn = "Data Source=DESKTOP-GSMD56T;Initial Catalog=Calender;Integrated Security=True";
+                string strCnn = "Data Source=PROCODERFUTURE\\SQLEXPRESS;Initial Catalog=Calender;Integrated Security=True";
                 //string strCnn = ConfigurationManager.ConnectionStrings["DBConnect"].ConnectionString;
                 cnn = new SqlConnection(strCnn);
                 if (cnn.State == ConnectionState.Open)
