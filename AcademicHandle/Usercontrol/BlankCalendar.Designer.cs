@@ -35,20 +35,21 @@
             // lb_Date
             // 
             this.lb_Date.AutoSize = true;
-            this.lb_Date.Location = new System.Drawing.Point(35, 30);
+            this.lb_Date.Font = new System.Drawing.Font("UTM Alter Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Date.Location = new System.Drawing.Point(39, 24);
             this.lb_Date.Name = "lb_Date";
-            this.lb_Date.Size = new System.Drawing.Size(51, 20);
+            this.lb_Date.Size = new System.Drawing.Size(43, 40);
             this.lb_Date.TabIndex = 0;
-            this.lb_Date.Text = "label1";
+            this.lb_Date.Text = "20";
             // 
             // lb_Status
             // 
             this.lb_Status.AutoSize = true;
-            this.lb_Status.Location = new System.Drawing.Point(35, 66);
+            this.lb_Status.Location = new System.Drawing.Point(23, 71);
             this.lb_Status.Name = "lb_Status";
-            this.lb_Status.Size = new System.Drawing.Size(51, 20);
+            this.lb_Status.Size = new System.Drawing.Size(76, 20);
             this.lb_Status.TabIndex = 1;
-            this.lb_Status.Text = "label1";
+            this.lb_Status.Text = "Comming";
             // 
             // BlankCalendar
             // 

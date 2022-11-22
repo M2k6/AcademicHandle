@@ -1,5 +1,4 @@
-﻿using AcademicHandle.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,17 +10,11 @@ using System.Windows.Forms;
 
 namespace AcademicHandle
 {
-    public partial class DetailedTimeTable : Form
+    public partial class frm_Setting : Form
     {
-        TimeTableProperty data_timetable;
-        public DetailedTimeTable()
+        public frm_Setting()
         {
             InitializeComponent();
-        }
-
-        private void btnSet_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

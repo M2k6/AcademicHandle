@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace AcademicHandle.Usercontrol
 {
-    public partial class MissionBlank : UserControl
+    public partial class AnotherMission : UserControl
     {
-        public MissionBlank()
+        public AnotherMission()
         {
             InitializeComponent();
-        }
-
-        private void btnFinish_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

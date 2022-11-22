@@ -8,21 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AcademicHandle.Usercontrol
+namespace AcademicHandle
 {
-    public partial class MissionBlank : UserControl
+    public partial class frm_Workspace : Form
     {
-        public MissionBlank()
+        public frm_Workspace()
         {
             InitializeComponent();
         }
 
-        private void btnFinish_Click(object sender, EventArgs e)
+        private void frm_Workspace_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

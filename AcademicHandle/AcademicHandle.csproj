@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DetailedTimeTable.cs">
+    <Compile Include="frm_Aim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailedTimeTable.Designer.cs">
-      <DependentUpon>DetailedTimeTable.cs</DependentUpon>
+    <Compile Include="frm_Aim.Designer.cs">
+      <DependentUpon>frm_Aim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DetailedTimeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DetailedTimeTable.Designer.cs">
+      <DependentUpon>frm_DetailedTimeTable.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
@@ -76,12 +82,30 @@
     <Compile Include="frm_SetTask.Designer.cs">
       <DependentUpon>frm_SetTask.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Setting.Designer.cs">
+      <DependentUpon>frm_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Workspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Workspace.Designer.cs">
+      <DependentUpon>frm_Workspace.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Aim_Property.cs" />
     <Compile Include="Model\Supporter.cs" />
     <Compile Include="Model\TimeTableProperty.cs" />
     <Compile Include="Model\Website_Blocked_Property.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usercontrol\AnotherMission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrol\AnotherMission.Designer.cs">
+      <DependentUpon>AnotherMission.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usercontrol\BlankCalendar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,8 +118,11 @@
     <Compile Include="Usercontrol\MissionBlank.Designer.cs">
       <DependentUpon>MissionBlank.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DetailedTimeTable.resx">
-      <DependentUpon>DetailedTimeTable.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Aim.resx">
+      <DependentUpon>frm_Aim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DetailedTimeTable.resx">
+      <DependentUpon>frm_DetailedTimeTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
@@ -109,6 +136,12 @@
     <EmbeddedResource Include="frm_SetTask.resx">
       <DependentUpon>frm_SetTask.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Setting.resx">
+      <DependentUpon>frm_Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Workspace.resx">
+      <DependentUpon>frm_Workspace.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -119,6 +152,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Usercontrol\AnotherMission.resx">
+      <DependentUpon>AnotherMission.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usercontrol\BlankCalendar.resx">
       <DependentUpon>BlankCalendar.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +198,14 @@
   <ItemGroup>
     <None Include="Icon\plus %281%29.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Icon\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\music-note.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

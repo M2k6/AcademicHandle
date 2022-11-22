@@ -14,6 +14,5 @@ namespace AcademicHandle.Model
         public string[] aims { get; set; }
         public bool status { get; set; } = false;
         public string[] level_important { get; set; } = { "Khẩn cấp", "Quan Trọng", "Trung" }; 
-
     }
 }

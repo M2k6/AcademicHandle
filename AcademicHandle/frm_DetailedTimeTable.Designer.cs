@@ -1,6 +1,6 @@
 ﻿namespace AcademicHandle
 {
-    partial class DetailedTimeTable
+    partial class frm_DetailedTimeTable
     {
         /// <summary>
         /// Required designer variable.

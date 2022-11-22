@@ -16,7 +16,7 @@ namespace AcademicHandle
 
         private void DetailedTimeTableOpen_Click(object sender, System.EventArgs e)
         {
-            DetailedTimeTable detailedTimeTable = new DetailedTimeTable();
+            frm_DetailedTimeTable detailedTimeTable = new frm_DetailedTimeTable();
             detailedTimeTable.ShowDialog();
         }
     }

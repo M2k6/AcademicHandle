@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AcademicHandle.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,21 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AcademicHandle.Usercontrol
+namespace AcademicHandle
 {
-    public partial class MissionBlank : UserControl
+    public partial class frm_DetailedTimeTable : Form
     {
-        public MissionBlank()
+        TimeTableProperty data_timetable;
+        public frm_DetailedTimeTable()
         {
             InitializeComponent();
         }
 
-        private void btnFinish_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnSet_Click(object sender, EventArgs e)
         {
 
         }
