@@ -66,6 +66,7 @@ namespace AcademicHandle
                 if (month == DateTime.Now.Month && year == DateTime.Now.Year && i == DateTime.Now.Day)
                     timeTable_Day.DisplayToday();
                 panel_Calendar.Controls.Add(timeTable_Day);
+                Console.WriteLine("");
             }
         }
     }
