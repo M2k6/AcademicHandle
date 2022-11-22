@@ -17,6 +17,11 @@ namespace AcademicHandle.Usercontrol
             InitializeComponent();
         }
 
+        public void Display(string name)
+        {
+            lbName.Text = name;
+        }
+
         private void btnFinish_Click(object sender, EventArgs e)
         {
 

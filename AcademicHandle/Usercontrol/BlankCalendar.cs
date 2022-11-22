@@ -13,6 +13,8 @@ namespace AcademicHandle.Usercontrol
     public partial class BlankCalendar : UserControl
     {
         public int Day { get; set; }
+        public int Month { get; set; }
+        public int Year { get; set; }
         public int Status { get; set; }
         public bool IsToday { get; set; }
         public BlankCalendar()
@@ -34,6 +36,12 @@ namespace AcademicHandle.Usercontrol
         private void BlankCalendar_MouseLeave(object sender, EventArgs e)
         {
             this.BackColor = Color.White;
+        }
+
+        private void lb_Date_Click(object sender, EventArgs e)
+        {
+            frm_SetTask a = new frm_SetTask(Year, Month, Day);
+            a.Show();
         }
     }
 }

@@ -58,6 +58,8 @@ namespace AcademicHandle
                 
                 BlankCalendar timeTable_Day = new BlankCalendar();
                 timeTable_Day.Day = i;
+                timeTable_Day.Month = month;
+                timeTable_Day.Year = year;
                 foreach (DataRow row in dt.Rows)
                 {
                     timeTable_Day.Status = Convert.ToInt32(row["status"]);

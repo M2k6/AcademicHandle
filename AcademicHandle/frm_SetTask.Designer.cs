@@ -180,7 +180,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_SetTask";
             this.Text = "frm_SetTask";
-            this.Load += new System.EventHandler(this.frm_SetTask_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
