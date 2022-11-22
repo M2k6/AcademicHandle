@@ -30,18 +30,19 @@
         {
             this.btnWorkSpaceOpen = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel_Calendar = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnPrev = new System.Windows.Forms.Button();
             this.btnAfter = new System.Windows.Forms.Button();
+            this.btnPrev = new System.Windows.Forms.Button();
+            this.txtDateCalender = new System.Windows.Forms.Label();
+            this.panel_Calendar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnWorkSpaceOpen
             // 
-            this.btnWorkSpaceOpen.Location = new System.Drawing.Point(1022, 686);
+            this.btnWorkSpaceOpen.Location = new System.Drawing.Point(908, 549);
+            this.btnWorkSpaceOpen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnWorkSpaceOpen.Name = "btnWorkSpaceOpen";
-            this.btnWorkSpaceOpen.Size = new System.Drawing.Size(207, 41);
+            this.btnWorkSpaceOpen.Size = new System.Drawing.Size(184, 33);
             this.btnWorkSpaceOpen.TabIndex = 1;
             this.btnWorkSpaceOpen.Text = "Mở không gian làm việc";
             this.btnWorkSpaceOpen.UseVisualStyleBackColor = true;
@@ -51,30 +52,26 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(79)))), ((int)(((byte)(200)))));
             this.panel1.Controls.Add(this.btnAfter);
             this.panel1.Controls.Add(this.btnPrev);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(45, 26);
+            this.panel1.Controls.Add(this.txtDateCalender);
+            this.panel1.Location = new System.Drawing.Point(40, 21);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1159, 37);
+            this.panel1.Size = new System.Drawing.Size(1030, 30);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // btnAfter
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("UTM Eremitage", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(508, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Chọn thời gian";
-            // 
-            // panel_Calendar
-            // 
-            this.panel_Calendar.BackColor = System.Drawing.Color.White;
-            this.panel_Calendar.Location = new System.Drawing.Point(45, 60);
-            this.panel_Calendar.Name = "panel_Calendar";
-            this.panel_Calendar.Size = new System.Drawing.Size(1159, 620);
-            this.panel_Calendar.TabIndex = 1;
+            this.btnAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(79)))), ((int)(((byte)(200)))));
+            this.btnAfter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnAfter.ForeColor = System.Drawing.Color.Snow;
+            this.btnAfter.Location = new System.Drawing.Point(988, 0);
+            this.btnAfter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAfter.Name = "btnAfter";
+            this.btnAfter.Size = new System.Drawing.Size(40, 27);
+            this.btnAfter.TabIndex = 2;
+            this.btnAfter.Text = ">";
+            this.btnAfter.UseVisualStyleBackColor = false;
+            this.btnAfter.Click += new System.EventHandler(this.btnAfter_Click);
             // 
             // btnPrev
             // 
@@ -82,36 +79,45 @@
             this.btnPrev.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnPrev.ForeColor = System.Drawing.Color.Snow;
             this.btnPrev.Location = new System.Drawing.Point(0, 0);
+            this.btnPrev.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(45, 34);
+            this.btnPrev.Size = new System.Drawing.Size(40, 27);
             this.btnPrev.TabIndex = 1;
             this.btnPrev.Text = "<";
             this.btnPrev.UseVisualStyleBackColor = false;
             this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
-            // btnAfter
+            // txtDateCalender
             // 
-            this.btnAfter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(79)))), ((int)(((byte)(200)))));
-            this.btnAfter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnAfter.ForeColor = System.Drawing.Color.Snow;
-            this.btnAfter.Location = new System.Drawing.Point(1111, 0);
-            this.btnAfter.Name = "btnAfter";
-            this.btnAfter.Size = new System.Drawing.Size(45, 34);
-            this.btnAfter.TabIndex = 2;
-            this.btnAfter.Text = ">";
-            this.btnAfter.UseVisualStyleBackColor = false;
-            this.btnAfter.Click += new System.EventHandler(this.btnAfter_Click);
+            this.txtDateCalender.AutoSize = true;
+            this.txtDateCalender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDateCalender.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtDateCalender.Location = new System.Drawing.Point(452, 3);
+            this.txtDateCalender.Name = "txtDateCalender";
+            this.txtDateCalender.Size = new System.Drawing.Size(116, 20);
+            this.txtDateCalender.TabIndex = 0;
+            this.txtDateCalender.Text = "Chọn thời gian";
+            // 
+            // panel_Calendar
+            // 
+            this.panel_Calendar.BackColor = System.Drawing.Color.White;
+            this.panel_Calendar.Location = new System.Drawing.Point(40, 48);
+            this.panel_Calendar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel_Calendar.Name = "panel_Calendar";
+            this.panel_Calendar.Size = new System.Drawing.Size(1030, 496);
+            this.panel_Calendar.TabIndex = 1;
             // 
             // frm_MainTimeTable
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(132)))), ((int)(((byte)(254)))));
-            this.ClientSize = new System.Drawing.Size(1241, 739);
+            this.ClientSize = new System.Drawing.Size(1103, 591);
             this.Controls.Add(this.panel_Calendar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnWorkSpaceOpen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frm_MainTimeTable";
             this.Text = "frm_MainTimeTable";
             this.Load += new System.EventHandler(this.frm_MainTimeTable_Load);
@@ -124,7 +130,7 @@
         #endregion
         private System.Windows.Forms.Button btnWorkSpaceOpen;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtDateCalender;
         private System.Windows.Forms.FlowLayoutPanel panel_Calendar;
         private System.Windows.Forms.Button btnAfter;
         private System.Windows.Forms.Button btnPrev;

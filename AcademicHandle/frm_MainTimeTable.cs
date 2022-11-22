@@ -1,4 +1,5 @@
 ﻿using AcademicHandle.Usercontrol;
+using Calender;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,8 +49,20 @@ namespace AcademicHandle
             int days = DateTime.DaysInMonth(year, month);
             for (int i = 0; i < days; i++)
             {
+                DataTable dt = new DataTable();
+                //DateTime DatetimeClick = new DateTime(year, month, 0);
+                //Console.WriteLine("AAAAAA" + DatetimeClick);
+                string date = year.ToString() +"-"+ month.ToString() +"-"+ i.ToString();
+                string sqlGetStatus = "select status from task_detail where create_date = '"+ date + "'";
+                dt = (new DataProvider()).executeQuery(sqlGetStatus);
+                
                 BlankCalendar timeTable_Day = new BlankCalendar();
                 timeTable_Day.Day = i;
+                foreach (DataRow row in dt.Rows)
+                {
+                    timeTable_Day.Status = Convert.ToInt32(row["status"]);
+                }
+                timeTable_Day.DisplayToday();
                 if (month == DateTime.Now.Month && year == DateTime.Now.Year && i == DateTime.Now.Day)
                     timeTable_Day.DisplayToday();
                 panel_Calendar.Controls.Add(timeTable_Day);

@@ -13,7 +13,7 @@ namespace AcademicHandle.Usercontrol
     public partial class BlankCalendar : UserControl
     {
         public int Day { get; set; }
-        public bool Status { get; set; }
+        public int Status { get; set; }
         public bool IsToday { get; set; }
         public BlankCalendar()
         {
@@ -22,6 +22,7 @@ namespace AcademicHandle.Usercontrol
         public void DisplayToday()
         {
             lb_Date.Text = Day.ToString();
+            lb_Status.Text = Status.ToString();
             if (IsToday == true) lb_Date.ForeColor = Color.Red;
         }
 

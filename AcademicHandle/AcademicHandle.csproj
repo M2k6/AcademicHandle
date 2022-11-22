@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataProvider.cs" />
     <Compile Include="frm_Aim.cs">
       <SubType>Form</SubType>
     </Compile>

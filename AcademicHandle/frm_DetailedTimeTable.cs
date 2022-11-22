@@ -1,4 +1,5 @@
 ﻿using AcademicHandle.Model;
+using Calender;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,9 +20,17 @@ namespace AcademicHandle
             InitializeComponent();
         }
 
-        private void btnSet_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            DateTime DatetimeClick = new DateTime(dt_DatePicker.Value.Year, dt_DatePicker.Value.Month, dt_DatePicker.Value.Day, Convert.ToInt32(dt_HourPicker.Value), Convert.ToInt32(dt_MinutePicker.Value), 00);
+            string sqlAddDetailDay = "insert into task_detail ( id,task_name, description, create_date, level, status) values ("+txtID.Text+", N'"+ txt_Name .Text+ "', N'"+ txt_description.Text+ "', '"+DatetimeClick+"',"+ drop_aim.Text + ", 1)";
+            if ((new DataProvider()).executeNonQuery(sqlAddDetailDay))
+            {
+                MessageBox.Show("Add successfully", "Thông báo");
+                frm_Main f = new frm_Main();
+                this.Hide();
+                f.Show();
+            }
         }
     }
 }
