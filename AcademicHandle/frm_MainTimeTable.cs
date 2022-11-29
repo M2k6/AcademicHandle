@@ -73,10 +73,9 @@ namespace AcademicHandle
                 
                 BlankCalendar timeTable_Day = new BlankCalendar();
                 timeTable_Day.Day = i;
-                if (dt.Rows.Count > 0)
-                {
-                    timeTable_Day.Status = "Có việc";
-                } else
+                timeTable_Day.Month = month;
+                timeTable_Day.Year = year;
+                foreach (DataRow row in dt.Rows)
                 {
                     timeTable_Day.Status = "Rảnh";
                 }

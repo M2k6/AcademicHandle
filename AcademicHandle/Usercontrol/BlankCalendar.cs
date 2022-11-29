@@ -13,7 +13,9 @@ namespace AcademicHandle.Usercontrol
     public partial class BlankCalendar : UserControl
     {
         public int Day { get; set; }
-        public string Status { get; set; }
+        public int Month { get; set; }
+        public int Year { get; set; }
+        public int Status { get; set; }
         public bool IsToday { get; set; }
         public BlankCalendar()
         {
@@ -36,15 +38,10 @@ namespace AcademicHandle.Usercontrol
             this.BackColor = Color.White;
         }
 
-        private void BlankCalendar_Load(object sender, EventArgs e)
+        private void lb_Date_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void BlankCalendar_Click(object sender, EventArgs e)
-        {
-            frm_SetTask frm = new frm_SetTask();
-            frm.Show();
+            frm_SetTask a = new frm_SetTask(Year, Month, Day);
+            a.Show();
         }
     }
 }
