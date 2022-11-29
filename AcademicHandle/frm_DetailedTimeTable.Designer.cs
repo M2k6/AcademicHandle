@@ -36,8 +36,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dt_HourPicker = new System.Windows.Forms.NumericUpDown();
             this.dt_MinutePicker = new System.Windows.Forms.NumericUpDown();
-            this.drop_aim = new System.Windows.Forms.ComboBox();
             this.drop_levelimportant = new System.Windows.Forms.ComboBox();
+            this.drop_aim = new System.Windows.Forms.ComboBox();
             this.txt_description = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -124,27 +124,27 @@
             this.dt_MinutePicker.Size = new System.Drawing.Size(107, 26);
             this.dt_MinutePicker.TabIndex = 9;
             // 
-            // drop_aim
-            // 
-            this.drop_aim.FormattingEnabled = true;
-            this.drop_aim.Items.AddRange(new object[] {
-            "Khẩn cấp",
-            "Quan trọng",
-            "Trung"});
-            this.drop_aim.Location = new System.Drawing.Point(39, 224);
-            this.drop_aim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.drop_aim.Name = "drop_aim";
-            this.drop_aim.Size = new System.Drawing.Size(121, 28);
-            this.drop_aim.TabIndex = 10;
-            // 
             // drop_levelimportant
             // 
             this.drop_levelimportant.FormattingEnabled = true;
-            this.drop_levelimportant.Location = new System.Drawing.Point(39, 294);
+            this.drop_levelimportant.Items.AddRange(new object[] {
+            "Khẩn cấp",
+            "Quan trọng",
+            "Trung"});
+            this.drop_levelimportant.Location = new System.Drawing.Point(39, 224);
             this.drop_levelimportant.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.drop_levelimportant.Name = "drop_levelimportant";
             this.drop_levelimportant.Size = new System.Drawing.Size(121, 28);
-            this.drop_levelimportant.TabIndex = 11;
+            this.drop_levelimportant.TabIndex = 10;
+            // 
+            // drop_aim
+            // 
+            this.drop_aim.FormattingEnabled = true;
+            this.drop_aim.Location = new System.Drawing.Point(39, 294);
+            this.drop_aim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.drop_aim.Name = "drop_aim";
+            this.drop_aim.Size = new System.Drawing.Size(121, 28);
+            this.drop_aim.TabIndex = 11;
             // 
             // txt_description
             // 
@@ -210,8 +210,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txt_description);
-            this.Controls.Add(this.drop_levelimportant);
             this.Controls.Add(this.drop_aim);
+            this.Controls.Add(this.drop_levelimportant);
             this.Controls.Add(this.dt_MinutePicker);
             this.Controls.Add(this.dt_HourPicker);
             this.Controls.Add(this.label4);
@@ -240,8 +240,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown dt_HourPicker;
         private System.Windows.Forms.NumericUpDown dt_MinutePicker;
-        private System.Windows.Forms.ComboBox drop_aim;
         private System.Windows.Forms.ComboBox drop_levelimportant;
+        private System.Windows.Forms.ComboBox drop_aim;
         private System.Windows.Forms.TextBox txt_description;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label5;

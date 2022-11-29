@@ -8,18 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AcademicHandle
+namespace AcademicHandle.Usercontrol
 {
-    public partial class frm_Home : Form
+    public partial class MusicDragger : UserControl
     {
-        public frm_Home()
+        public MusicDragger()
         {
-            InitializeComponent();
+            InitializeComponent();  
+            
         }
 
-        private void btnKnowledgeRevise_Click(object sender, EventArgs e)
+        private void lbMusicAdd_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

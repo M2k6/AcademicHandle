@@ -47,6 +47,7 @@ namespace AcademicHandle
             this.panel_Container.Name = "panel_Container";
             this.panel_Container.Size = new System.Drawing.Size(1244, 698);
             this.panel_Container.TabIndex = 0;
+            this.panel_Container.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Container_Paint);
             // 
             // btnHome
             // 
@@ -113,6 +114,7 @@ namespace AcademicHandle
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_Main";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frm_Main_Load);
             this.ResumeLayout(false);
 
         }

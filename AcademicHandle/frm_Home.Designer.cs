@@ -44,6 +44,7 @@
             this.btnKnowledgeRevise.TabIndex = 0;
             this.btnKnowledgeRevise.Text = "Ôn Tập Kiến Thức";
             this.btnKnowledgeRevise.UseVisualStyleBackColor = false;
+            this.btnKnowledgeRevise.Click += new System.EventHandler(this.btnKnowledgeRevise_Click);
             // 
             // button2
             // 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbHour = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -35,6 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lbMissionNow = new System.Windows.Forms.Label();
             this.btnAnotherMission = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lbHour
@@ -75,12 +77,13 @@
             this.btnMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMusic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(132)))), ((int)(((byte)(254)))));
             this.btnMusic.Image = global::AcademicHandle.Properties.Resources.music_note;
-            this.btnMusic.Location = new System.Drawing.Point(1120, 12);
+            this.btnMusic.Location = new System.Drawing.Point(1141, 12);
             this.btnMusic.Name = "btnMusic";
-            this.btnMusic.Size = new System.Drawing.Size(87, 69);
+            this.btnMusic.Size = new System.Drawing.Size(66, 60);
             this.btnMusic.TabIndex = 3;
             this.btnMusic.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMusic.UseVisualStyleBackColor = true;
+            this.btnMusic.Click += new System.EventHandler(this.btnMusic_Click);
             // 
             // label3
             // 
@@ -99,7 +102,7 @@
             this.lbMissionNow.AutoSize = true;
             this.lbMissionNow.Font = new System.Drawing.Font("UTM Alexander", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMissionNow.ForeColor = System.Drawing.Color.White;
-            this.lbMissionNow.Location = new System.Drawing.Point(243, 593);
+            this.lbMissionNow.Location = new System.Drawing.Point(243, 581);
             this.lbMissionNow.Name = "lbMissionNow";
             this.lbMissionNow.Size = new System.Drawing.Size(268, 30);
             this.lbMissionNow.TabIndex = 5;
@@ -115,6 +118,11 @@
             this.btnAnotherMission.TabIndex = 6;
             this.btnAnotherMission.Text = "...";
             this.btnAnotherMission.UseVisualStyleBackColor = true;
+            // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // frm_Workspace
             // 
@@ -148,5 +156,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbMissionNow;
         private System.Windows.Forms.Button btnAnotherMission;
+        private System.Windows.Forms.Timer timer;
     }
 }

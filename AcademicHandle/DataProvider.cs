@@ -14,7 +14,7 @@ namespace Calender
     /// kết nối
     /// executequẻy
     /// </summary>
-    public class DataProvider
+    public class DataProvider : IDisposable
     {
         //Khai bao cac thanh phan ket noi va xu ly DB
         SqlConnection cnn; //Ket noi DB
@@ -27,7 +27,6 @@ namespace Calender
         {
             connect();
         }
-
         private void connect()
         {
             try
@@ -44,7 +43,7 @@ namespace Calender
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Loi ket noi:" + ex.Message);
+                MessageBox.Show("Loi ket noi:" + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
 
@@ -59,7 +58,7 @@ namespace Calender
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Execute fail:" + ex.Message);
+                MessageBox.Show("Execute fail:" + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
             return dt;
         }
@@ -85,7 +84,7 @@ namespace Calender
             }
             catch (Exception)
             {
-                Console.WriteLine("Loi");
+                MessageBox.Show("Loi data","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Stop);
             }
             return ten;
         }
@@ -103,10 +102,15 @@ namespace Calender
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Insert/Update/Delete error:"+ex.Message);
+                MessageBox.Show("Insert/Update/Delete error:"+ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return false;
             }
             return true;
+        }
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
         }
     }
 }

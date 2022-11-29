@@ -32,14 +32,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel_Morning = new System.Windows.Forms.FlowLayoutPanel();
             this.panel_Afternoon = new System.Windows.Forms.FlowLayoutPanel();
             this.panel_Evenning = new System.Windows.Forms.FlowLayoutPanel();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -48,7 +47,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumOrchid;
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(70, 74);
             this.panel1.Name = "panel1";
@@ -58,11 +56,11 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(132)))), ((int)(((byte)(254)))));
             this.button1.Image = global::AcademicHandle.Properties.Resources.plus__1_;
-            this.button1.Location = new System.Drawing.Point(307, 9);
+            this.button1.Location = new System.Drawing.Point(1141, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(39, 33);
+            this.button1.Size = new System.Drawing.Size(66, 56);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.DetailedTimeTableOpen_Click);
@@ -80,24 +78,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MediumOrchid;
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(450, 74);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(350, 52);
             this.panel2.TabIndex = 1;
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.button2.Image = global::AcademicHandle.Properties.Resources.plus__1_;
-            this.button2.Location = new System.Drawing.Point(308, 11);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(39, 33);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.DetailedTimeTableOpen_Click);
             // 
             // label2
             // 
@@ -112,24 +97,11 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MediumOrchid;
-            this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(829, 74);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(350, 52);
             this.panel3.TabIndex = 1;
-            // 
-            // button3
-            // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.button3.Image = global::AcademicHandle.Properties.Resources.plus__1_;
-            this.button3.Location = new System.Drawing.Point(308, 11);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(39, 33);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.DetailedTimeTableOpen_Click);
             // 
             // label3
             // 
@@ -143,6 +115,7 @@
             // 
             // panel_Morning
             // 
+            this.panel_Morning.AutoScroll = true;
             this.panel_Morning.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel_Morning.Location = new System.Drawing.Point(70, 126);
             this.panel_Morning.Name = "panel_Morning";
@@ -165,12 +138,24 @@
             this.panel_Evenning.Size = new System.Drawing.Size(350, 470);
             this.panel_Evenning.TabIndex = 4;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(1084, 631);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(77, 40);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Reload";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // frm_SetTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(132)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(1219, 683);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.panel_Evenning);
             this.Controls.Add(this.panel_Afternoon);
             this.Controls.Add(this.panel_Morning);
@@ -197,12 +182,11 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.FlowLayoutPanel panel_Morning;
         private System.Windows.Forms.FlowLayoutPanel panel_Afternoon;
         private System.Windows.Forms.FlowLayoutPanel panel_Evenning;
+        private System.Windows.Forms.Button button4;
     }
 }

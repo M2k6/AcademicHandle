@@ -58,6 +58,14 @@ namespace AcademicHandle
             temp_month = DateTime.Now.Month;
             temp_year = DateTime.Now.Year;
         }
+
+        private void btnWorkSpaceOpen_Click(object sender, EventArgs e)
+        {
+            frm_Workspace frm = new frm_Workspace();
+            frm.Show();
+            this.Hide();
+        }
+
         private void DisplayDate(int year, int month)
         {
             panel_Calendar.Controls.Clear();
@@ -77,7 +85,7 @@ namespace AcademicHandle
                 timeTable_Day.Year = year;
                 foreach (DataRow row in dt.Rows)
                 {
-                    timeTable_Day.Status = "Rảnh";
+                    timeTable_Day.Status = "Có việc";
                 }
                 timeTable_Day.DisplayToday();
                 if (month == DateTime.Now.Month && year == DateTime.Now.Year && i == DateTime.Now.Day)

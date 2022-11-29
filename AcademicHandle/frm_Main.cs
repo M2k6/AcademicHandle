@@ -73,5 +73,20 @@ namespace AcademicHandle
         {
             this.Close();
         }
+
+        private void panel_Container_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frm_Main_Load(object sender, EventArgs e)
+        {
+            frm_Home home = new frm_Home();
+            panel_Container.Controls.Clear();
+            home.TopLevel = false;
+            home.Dock = DockStyle.Fill;
+            panel_Container.Controls.Add(home);
+            home.Show();
+        }
     }
 }

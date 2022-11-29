@@ -15,7 +15,7 @@ namespace AcademicHandle.Usercontrol
         public int Day { get; set; }
         public int Month { get; set; }
         public int Year { get; set; }
-        public int Status { get; set; }
+        public string Status { get; set; }
         public bool IsToday { get; set; }
         public BlankCalendar()
         {
@@ -24,7 +24,7 @@ namespace AcademicHandle.Usercontrol
         public void DisplayToday()
         {
             lb_Date.Text = Day.ToString();
-            lb_Status.Text = Status.ToString();
+            lb_Status.Text = Status;
             if (IsToday == true) lb_Date.ForeColor = Color.Red;
         }
 

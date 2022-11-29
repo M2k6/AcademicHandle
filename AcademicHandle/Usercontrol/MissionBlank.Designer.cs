@@ -28,52 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbName = new System.Windows.Forms.Label();
-            this.btnFinish = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
+            this.cmenustrip_1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.thôngTinChiTiếtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.hoànThànhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmenustrip_1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbName.Location = new System.Drawing.Point(5, 8);
+            this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbName.Location = new System.Drawing.Point(3, 6);
+            this.lbName.MaximumSize = new System.Drawing.Size(336, 0);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(57, 22);
+            this.lbName.Size = new System.Drawing.Size(51, 20);
             this.lbName.TabIndex = 0;
             this.lbName.Text = "Name";
             // 
-            // btnFinish
+            // cmenustrip_1
             // 
-            this.btnFinish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinish.Image = global::AcademicHandle.Properties.Resources.check;
-            this.btnFinish.Location = new System.Drawing.Point(251, 6);
-            this.btnFinish.Name = "btnFinish";
-            this.btnFinish.Size = new System.Drawing.Size(42, 46);
-            this.btnFinish.TabIndex = 1;
-            this.btnFinish.UseVisualStyleBackColor = true;
-            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
+            this.cmenustrip_1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.cmenustrip_1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thôngTinChiTiếtToolStripMenuItem,
+            this.xóaToolStripMenuItem,
+            this.hoànThànhToolStripMenuItem});
+            this.cmenustrip_1.Name = "cmenustrip_1";
+            this.cmenustrip_1.Size = new System.Drawing.Size(241, 133);
             // 
-            // btnDelete
+            // thôngTinChiTiếtToolStripMenuItem
             // 
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Image = global::AcademicHandle.Properties.Resources.bin;
-            this.btnDelete.Location = new System.Drawing.Point(298, 5);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(42, 46);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.thôngTinChiTiếtToolStripMenuItem.Name = "thôngTinChiTiếtToolStripMenuItem";
+            this.thôngTinChiTiếtToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.thôngTinChiTiếtToolStripMenuItem.Text = "Thông tin chi tiết...";
+            this.thôngTinChiTiếtToolStripMenuItem.Click += new System.EventHandler(this.thôngTinChiTiếtToolStripMenuItem_Click);
+            // 
+            // xóaToolStripMenuItem
+            // 
+            this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
+            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.xóaToolStripMenuItem.Text = "Xóa ";
+            this.xóaToolStripMenuItem.Click += new System.EventHandler(this.xóaToolStripMenuItem_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.ContextMenuStrip = this.cmenustrip_1;
+            this.panel1.Location = new System.Drawing.Point(4, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(336, 62);
+            this.panel1.TabIndex = 5;
+            // 
+            // hoànThànhToolStripMenuItem
+            // 
+            this.hoànThànhToolStripMenuItem.Name = "hoànThànhToolStripMenuItem";
+            this.hoànThànhToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.hoànThànhToolStripMenuItem.Text = "Hoàn thành";
+            this.hoànThànhToolStripMenuItem.Click += new System.EventHandler(this.hoànThànhToolStripMenuItem_Click);
             // 
             // MissionBlank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnFinish);
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ContextMenuStrip = this.cmenustrip_1;
             this.Controls.Add(this.lbName);
+            this.Controls.Add(this.panel1);
             this.Name = "MissionBlank";
-            this.Size = new System.Drawing.Size(343, 56);
+            this.Size = new System.Drawing.Size(343, 70);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MissionBlank_MouseClick);
+            this.cmenustrip_1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,7 +108,10 @@
         #endregion
 
         private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.Button btnFinish;
-        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.ContextMenuStrip cmenustrip_1;
+        private System.Windows.Forms.ToolStripMenuItem thôngTinChiTiếtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xóaToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripMenuItem hoànThànhToolStripMenuItem;
     }
 }

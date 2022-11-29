@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -119,6 +125,12 @@
     <Compile Include="Usercontrol\MissionBlank.Designer.cs">
       <DependentUpon>MissionBlank.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usercontrol\MusicDragger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usercontrol\MusicDragger.Designer.cs">
+      <DependentUpon>MusicDragger.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm_Aim.resx">
       <DependentUpon>frm_Aim.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrol\MissionBlank.resx">
       <DependentUpon>MissionBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usercontrol\MusicDragger.resx">
+      <DependentUpon>MusicDragger.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
