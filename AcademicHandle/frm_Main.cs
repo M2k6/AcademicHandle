@@ -12,11 +12,7 @@ namespace AcademicHandle
 {
     public partial class frm_Main : Form
     {
-        public frm_Main()
-        {
-            InitializeComponent();
-            this.SetStyle(ControlStyles.ResizeRedraw,true);
-        }
+       
         private const int cGrip = 16;
         private const int cCaption = 32;
         protected override void WndProc(ref Message m)
@@ -38,11 +34,18 @@ namespace AcademicHandle
 
             }
             base.WndProc(ref m);
+        } 
+        public frm_Main()
+        {
+            InitializeComponent();
+            this.SetStyle(ControlStyles.ResizeRedraw,true);
         }
-
+        #region Base-Function
         private void btnHome_Click(object sender, EventArgs e)
         {
-            frm_Home home = new frm_Home();
+            frm_Home home = new frm_Home(panel_Container.Height, panel_Container.Width);
+            home.Width = this.panel_Container.Width;
+            home.Height = this.panel_Container.Height;
             panel_Container.Controls.Clear();
             home.TopLevel = false;
             home.Dock = DockStyle.Fill;
@@ -73,7 +76,7 @@ namespace AcademicHandle
         {
             this.Close();
         }
-
+        #endregion
         private void panel_Container_Paint(object sender, PaintEventArgs e)
         {
 
@@ -81,7 +84,7 @@ namespace AcademicHandle
 
         private void frm_Main_Load(object sender, EventArgs e)
         {
-            frm_Home home = new frm_Home();
+            frm_Home home = new frm_Home(this.Height,this.Width);
             panel_Container.Controls.Clear();
             home.TopLevel = false;
             home.Dock = DockStyle.Fill;

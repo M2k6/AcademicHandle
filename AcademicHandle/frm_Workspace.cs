@@ -1,5 +1,6 @@
 ﻿using AcademicHandle.Usercontrol;
 using Calender;
+using DevExpress.XtraEditors.ImageEditor;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,5 +48,23 @@ namespace AcademicHandle
             this.Controls.Add(this.dragger);
             this.dragger.Show();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            OnChecking();
+        }
+        //Event Field
+        public event EventHandler MoveBackMainFrm;
+        public void OnChecking()
+        {
+            MoveBackMainFrm(this, EventArgs.Empty);
+        }
+
+        private void btnAnotherMission_Click(object sender, EventArgs e)
+        {
+
+        }
+        //
+
     }
 }

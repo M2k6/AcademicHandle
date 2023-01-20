@@ -34,12 +34,13 @@
             this.btnPrev = new System.Windows.Forms.Button();
             this.txtDateCalender = new System.Windows.Forms.Label();
             this.panel_Calendar = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel_Container = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnWorkSpaceOpen
             // 
-            this.btnWorkSpaceOpen.Location = new System.Drawing.Point(1022, 686);
+            this.btnWorkSpaceOpen.Location = new System.Drawing.Point(1025, 649);
             this.btnWorkSpaceOpen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnWorkSpaceOpen.Name = "btnWorkSpaceOpen";
             this.btnWorkSpaceOpen.Size = new System.Drawing.Size(207, 41);
@@ -105,18 +106,27 @@
             this.panel_Calendar.Location = new System.Drawing.Point(45, 60);
             this.panel_Calendar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_Calendar.Name = "panel_Calendar";
-            this.panel_Calendar.Size = new System.Drawing.Size(1159, 620);
+            this.panel_Calendar.Size = new System.Drawing.Size(1156, 585);
             this.panel_Calendar.TabIndex = 1;
+            // 
+            // panel_Container
+            // 
+            this.panel_Container.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(132)))), ((int)(((byte)(254)))));
+            this.panel_Container.Location = new System.Drawing.Point(0, -1);
+            this.panel_Container.Name = "panel_Container";
+            this.panel_Container.Size = new System.Drawing.Size(1245, 698);
+            this.panel_Container.TabIndex = 0;
             // 
             // frm_MainTimeTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(132)))), ((int)(((byte)(254)))));
-            this.ClientSize = new System.Drawing.Size(1241, 739);
+            this.ClientSize = new System.Drawing.Size(1244, 698);
             this.Controls.Add(this.panel_Calendar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnWorkSpaceOpen);
+            this.Controls.Add(this.panel_Container);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frm_MainTimeTable";
@@ -135,5 +145,6 @@
         private System.Windows.Forms.FlowLayoutPanel panel_Calendar;
         private System.Windows.Forms.Button btnAfter;
         private System.Windows.Forms.Button btnPrev;
+        private System.Windows.Forms.Panel panel_Container;
     }
 }

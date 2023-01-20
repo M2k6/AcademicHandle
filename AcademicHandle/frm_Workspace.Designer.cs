@@ -37,6 +37,7 @@
             this.lbMissionNow = new System.Windows.Forms.Label();
             this.btnAnotherMission = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbHour
@@ -118,11 +119,22 @@
             this.btnAnotherMission.TabIndex = 6;
             this.btnAnotherMission.Text = "...";
             this.btnAnotherMission.UseVisualStyleBackColor = true;
+            this.btnAnotherMission.Click += new System.EventHandler(this.btnAnotherMission_Click);
             // 
             // timer
             // 
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(85, 43);
+            this.btnBack.TabIndex = 7;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // frm_Workspace
             // 
@@ -131,6 +143,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(132)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(1219, 683);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnAnotherMission);
             this.Controls.Add(this.lbMissionNow);
             this.Controls.Add(this.label3);
@@ -157,5 +170,6 @@
         private System.Windows.Forms.Label lbMissionNow;
         private System.Windows.Forms.Button btnAnotherMission;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Button btnBack;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AcademicHandle.Usercontrol;
 using Calender;
+using System;
 using System.Data;
 using System.Windows.Forms;
 
@@ -67,6 +68,11 @@ namespace AcademicHandle
             }
         }
 
+        private void btnBack_Click(object sender, System.EventArgs e)
+        {
+            OnChecking();
+        }
+
         private void DetailedTimeTableOpen_Click(object sender, System.EventArgs e)
         {
             frm_DetailedTimeTable detailedTimeTable = new frm_DetailedTimeTable();
@@ -79,6 +85,12 @@ namespace AcademicHandle
             panel_Evenning.Controls.Clear();
             panel_Afternoon.Controls.Clear();
             Display();
+        }
+        // Event Field 
+        public event EventHandler MoveBackMainFrm;
+        public void OnChecking()
+        {
+            MoveBackMainFrm.Invoke(this, EventArgs.Empty);
         }
     }
 }

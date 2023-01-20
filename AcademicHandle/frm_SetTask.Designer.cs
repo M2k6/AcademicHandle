@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -39,6 +39,7 @@
             this.panel_Afternoon = new System.Windows.Forms.FlowLayoutPanel();
             this.panel_Evenning = new System.Windows.Forms.FlowLayoutPanel();
             this.button4 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -48,22 +49,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumOrchid;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(70, 74);
+            this.panel1.Location = new System.Drawing.Point(33, 74);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(350, 52);
             this.panel1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(132)))), ((int)(((byte)(254)))));
-            this.button1.Image = global::AcademicHandle.Properties.Resources.plus__1_;
-            this.button1.Location = new System.Drawing.Point(1141, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 56);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.DetailedTimeTableOpen_Click);
             // 
             // label1
             // 
@@ -75,11 +64,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Sáng";
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(132)))), ((int)(((byte)(254)))));
+            this.button1.Image = global::AcademicHandle.Properties.Resources.plus__1_;
+            this.button1.Location = new System.Drawing.Point(1166, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(66, 56);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.DetailedTimeTableOpen_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MediumOrchid;
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(450, 74);
+            this.panel2.Location = new System.Drawing.Point(449, 74);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(350, 52);
             this.panel2.TabIndex = 1;
@@ -98,7 +99,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.MediumOrchid;
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(829, 74);
+            this.panel3.Location = new System.Drawing.Point(864, 74);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(350, 52);
             this.panel3.TabIndex = 1;
@@ -117,7 +118,7 @@
             // 
             this.panel_Morning.AutoScroll = true;
             this.panel_Morning.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel_Morning.Location = new System.Drawing.Point(70, 126);
+            this.panel_Morning.Location = new System.Drawing.Point(33, 126);
             this.panel_Morning.Name = "panel_Morning";
             this.panel_Morning.Size = new System.Drawing.Size(350, 470);
             this.panel_Morning.TabIndex = 2;
@@ -125,7 +126,7 @@
             // panel_Afternoon
             // 
             this.panel_Afternoon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel_Afternoon.Location = new System.Drawing.Point(450, 126);
+            this.panel_Afternoon.Location = new System.Drawing.Point(449, 126);
             this.panel_Afternoon.Name = "panel_Afternoon";
             this.panel_Afternoon.Size = new System.Drawing.Size(350, 470);
             this.panel_Afternoon.TabIndex = 3;
@@ -133,14 +134,14 @@
             // panel_Evenning
             // 
             this.panel_Evenning.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel_Evenning.Location = new System.Drawing.Point(829, 126);
+            this.panel_Evenning.Location = new System.Drawing.Point(864, 126);
             this.panel_Evenning.Name = "panel_Evenning";
             this.panel_Evenning.Size = new System.Drawing.Size(350, 470);
             this.panel_Evenning.TabIndex = 4;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1084, 631);
+            this.button4.Location = new System.Drawing.Point(1130, 634);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(77, 40);
             this.button4.TabIndex = 5;
@@ -148,12 +149,23 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(1035, 634);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(77, 40);
+            this.btnBack.TabIndex = 6;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frm_SetTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(132)))), ((int)(((byte)(254)))));
-            this.ClientSize = new System.Drawing.Size(1219, 683);
+            this.ClientSize = new System.Drawing.Size(1244, 698);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel_Evenning);
@@ -188,5 +200,6 @@
         private System.Windows.Forms.FlowLayoutPanel panel_Afternoon;
         private System.Windows.Forms.FlowLayoutPanel panel_Evenning;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnBack;
     }
 }

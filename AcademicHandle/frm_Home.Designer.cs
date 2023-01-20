@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.btnKnowledgeRevise = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnMainTimeTable = new System.Windows.Forms.Button();
             this.btnEvaluation_Aim = new System.Windows.Forms.Button();
             this.btnSetting = new System.Windows.Forms.Button();
+            this.panel_Container = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btnKnowledgeRevise
@@ -46,17 +47,18 @@
             this.btnKnowledgeRevise.UseVisualStyleBackColor = false;
             this.btnKnowledgeRevise.Click += new System.EventHandler(this.btnKnowledgeRevise_Click);
             // 
-            // button2
+            // btnMainTimeTable
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(46, 144);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(276, 52);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Thời Gian Biểu";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnMainTimeTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.btnMainTimeTable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMainTimeTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMainTimeTable.Location = new System.Drawing.Point(46, 144);
+            this.btnMainTimeTable.Name = "btnMainTimeTable";
+            this.btnMainTimeTable.Size = new System.Drawing.Size(276, 52);
+            this.btnMainTimeTable.TabIndex = 1;
+            this.btnMainTimeTable.Text = "Thời Gian Biểu";
+            this.btnMainTimeTable.UseVisualStyleBackColor = false;
+            this.btnMainTimeTable.Click += new System.EventHandler(this.btnMainTimeTable_Click);
             // 
             // btnEvaluation_Aim
             // 
@@ -69,6 +71,7 @@
             this.btnEvaluation_Aim.TabIndex = 2;
             this.btnEvaluation_Aim.Text = "Mục tiêu";
             this.btnEvaluation_Aim.UseVisualStyleBackColor = false;
+            this.btnEvaluation_Aim.Click += new System.EventHandler(this.btnEvaluation_Aim_Click);
             // 
             // btnSetting
             // 
@@ -81,6 +84,15 @@
             this.btnSetting.TabIndex = 3;
             this.btnSetting.Text = "Cài Đặt";
             this.btnSetting.UseVisualStyleBackColor = false;
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
+            // 
+            // panel_Container
+            // 
+            this.panel_Container.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(132)))), ((int)(((byte)(254)))));
+            this.panel_Container.Location = new System.Drawing.Point(1, 1);
+            this.panel_Container.Name = "panel_Container";
+            this.panel_Container.Size = new System.Drawing.Size(800, 450);
+            this.panel_Container.TabIndex = 4;
             // 
             // frm_Home
             // 
@@ -90,8 +102,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSetting);
             this.Controls.Add(this.btnEvaluation_Aim);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnMainTimeTable);
             this.Controls.Add(this.btnKnowledgeRevise);
+            this.Controls.Add(this.panel_Container);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_Home";
             this.Text = "Home";
@@ -99,11 +112,13 @@
 
         }
 
+
         #endregion
 
         private System.Windows.Forms.Button btnKnowledgeRevise;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMainTimeTable;
         private System.Windows.Forms.Button btnEvaluation_Aim;
         private System.Windows.Forms.Button btnSetting;
+        private System.Windows.Forms.Panel panel_Container;
     }
 }

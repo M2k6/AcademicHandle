@@ -101,7 +101,14 @@
     <Compile Include="frm_Workspace.Designer.cs">
       <DependentUpon>frm_Workspace.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Workspace_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Workspace_Items.Designer.cs">
+      <DependentUpon>frm_Workspace_Items.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Aim_Property.cs" />
+    <Compile Include="Model\MissionDateTime.cs" />
     <Compile Include="Model\Supporter.cs" />
     <Compile Include="Model\TimeTableProperty.cs" />
     <Compile Include="Model\Website_Blocked_Property.cs" />
@@ -154,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Workspace.resx">
       <DependentUpon>frm_Workspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Workspace_Items.resx">
+      <DependentUpon>frm_Workspace_Items.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

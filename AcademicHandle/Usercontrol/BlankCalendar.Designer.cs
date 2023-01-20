@@ -36,31 +36,31 @@
             // 
             this.lb_Date.AutoSize = true;
             this.lb_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Date.Location = new System.Drawing.Point(35, 19);
+            this.lb_Date.Location = new System.Drawing.Point(39, 24);
             this.lb_Date.Name = "lb_Date";
-            this.lb_Date.Size = new System.Drawing.Size(44, 31);
+            this.lb_Date.Size = new System.Drawing.Size(53, 37);
             this.lb_Date.TabIndex = 0;
             this.lb_Date.Text = "20";
-            this.lb_Date.Click += new System.EventHandler(this.lb_Date_Click);
             // 
             // lb_Status
             // 
             this.lb_Status.AutoSize = true;
-            this.lb_Status.Location = new System.Drawing.Point(20, 57);
+            this.lb_Status.Location = new System.Drawing.Point(22, 71);
             this.lb_Status.Name = "lb_Status";
-            this.lb_Status.Size = new System.Drawing.Size(66, 17);
+            this.lb_Status.Size = new System.Drawing.Size(76, 20);
             this.lb_Status.TabIndex = 1;
             this.lb_Status.Text = "Comming";
             // 
             // BlankCalendar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lb_Status);
             this.Controls.Add(this.lb_Date);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BlankCalendar";
-            this.Size = new System.Drawing.Size(108, 85);
+            this.Size = new System.Drawing.Size(122, 106);
+            this.Click += new System.EventHandler(this.BlankCalendar_Click);
             this.MouseLeave += new System.EventHandler(this.BlankCalendar_MouseLeave);
             this.MouseHover += new System.EventHandler(this.BlankCalendar_MouseHover);
             this.ResumeLayout(false);
